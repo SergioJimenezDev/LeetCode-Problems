@@ -12,9 +12,9 @@ public class Solution2942 {
         
         List<Integer> list = new ArrayList<>();
 
-        for (String word : words) {
-            if (word.contains(x)){
-
+        for(int i = 0; i < words.length; i++){
+            if (words[i].contains(String.valueOf(x))){
+                list.add(i);
             }
         }
 
